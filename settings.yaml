@@ -1,0 +1,25 @@
+# configurations
+# 详情请参考：https://halo.run/develop/theme.html#settings-yaml
+genernal:
+  label: 基本设置
+  items:
+    home_cover:
+      name: home_cover
+      label: 首页背景
+      type: attachment
+      default: https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/default-bg.jpg
+    archives_cover:
+      name: archives_cover
+      label: 归档背景
+      type: attachment
+      default: https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/default-bg.jpg
+    link_cover:
+      name: link_cover
+      label: 友链背景
+      type: attachment
+      default: https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/default-bg.jpg
+    footer:
+      name: footer
+      label: footer
+      type: text
+      placeholder: '尾部'

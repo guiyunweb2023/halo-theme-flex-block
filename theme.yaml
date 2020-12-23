@@ -1,0 +1,23 @@
+#id: 主题的唯一标识
+#name: 主题名称
+#author:
+#  name: 作者名称
+#  website: 作者网站
+#description: 主题描述
+#logo: 主题 Logo
+#website: 主题网址
+#website: 主题的 Github 仓库
+#version: 版本号
+
+# 详情请参考：https://halo.run/develop/theme.html#theme-yaml
+
+id: guiyunweb_flex-block
+name: flex-block
+author:
+  name: Guiyunweb
+  website: https://guiyunweb.com
+description: flex-block主题修改
+logo:
+website: https://github.com/guiyunweb/halo-theme-flex-block
+repo: https://github.com/guiyunweb/halo-theme-flex-block
+version: 1.0
