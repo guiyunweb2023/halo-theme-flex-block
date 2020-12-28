@@ -11,7 +11,8 @@
                             <h2>${archive.year?c}</h2>
                             <ul>
                                 <#list archive.posts?sort_by("createTime")?reverse as post>
-                                    <li style="line-height:40px;"><a href="${context!}/archives/${post.url!}">${post.title!}</a></li>
+                                    <li style="line-height:40px;">
+                                        <a href="${post.fullPath!}">${post.title!}</a></li>
                                 </#list>
                             </ul>
                         </li>

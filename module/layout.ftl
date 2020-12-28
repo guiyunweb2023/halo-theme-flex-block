@@ -1,6 +1,6 @@
 <#macro layout title,keywords,description>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh" xmlns="">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="${keywords!}"/>
@@ -25,6 +25,9 @@
     <#include "footer.ftl">
 </div>
 </body>
+<script type="text/javascript">
+
+</script>
 </html>
 </#macro>
 

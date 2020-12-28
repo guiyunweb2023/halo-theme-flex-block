@@ -23,4 +23,3 @@ genernal:
       label: footer
       type: text
       placeholder: '尾部'
-      default: XXXX

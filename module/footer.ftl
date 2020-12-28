@@ -1,9 +1,10 @@
 <footer id="footer" class="footer">
     <div class="footer-container">
         <p><@global.footer /></p>
-        <p><a href="http://www.miitbeian.gov.cn" target="_blank">
+        <#if settings.footer??>
+            <a href="https://beian.miit.gov.cn/" target="_blank">
                 ${settings.footer}
             </a>
-        </p>
+        </#if>
     </div>
 </footer>
