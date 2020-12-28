@@ -6,12 +6,12 @@
         <article class="content-container article-container">
             <div class="article-content">
                 <div class="article-entry">
-                    <p>站点名称 | ${blog_title!}</p>
-                    <p>站点地址 | <a href="${blog_url!}">${blog_url!}</a></p>
-                    <p>站点描述 | ${blog_title!}</p>
-                    <p>站点图标 | <a href="${user.avatar!}"
+                    <p>站点名称 | ${settings.link_title!}</p>
+                    <p>站点地址 | <a href="${settings.link_url!}">${settings.link_url!}</a></p>
+                    <p>站点描述 | ${settings.link_describe!}</p>
+                    <p>站点图标 | <a href="${settings.link_icon!}"
                                  target="_blank"
-                                 rel="noopener">https://image.guiyunweb.com/favicon.png</a>
+                                 rel="noopener">${settings.link_icon!}</a>
                     </p>
                 </div>
             </div>

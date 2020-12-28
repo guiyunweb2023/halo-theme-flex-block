@@ -23,3 +23,23 @@ genernal:
       label: footer
       type: text
       placeholder: '尾部'
+link:
+  label: 友链配置
+  items:
+    link_title:
+      name: link_title
+      label: 站点名称
+      type: text
+    link_url:
+      name: link_url
+      label: 站点地址
+      type: text
+    link_describe:
+      name: link_describe
+      label: 站点描述
+      type: text
+    link_icon:
+      name: link_icon
+      label: 站点名称
+      type: text
+

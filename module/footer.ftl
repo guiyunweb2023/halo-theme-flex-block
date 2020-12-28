@@ -6,5 +6,8 @@
                 ${settings.footer}
             </a>
         </#if>
+        <p>Powered by <a href="https://halo.run/" target="_blank" rel="noopener noreferrer">Halo</a> Theme - <a
+                    href="${theme.repo!}" target="_blank" rel="noopener noreferrer author">${theme.name!}</a>
+        </p>
     </div>
 </footer>
