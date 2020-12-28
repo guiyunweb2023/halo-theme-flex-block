@@ -9,12 +9,10 @@
                             </div>
                             <a class="article-link card-link" href="${post.fullPath!}" itemprop="url"></a>
                             <h2 class="article-title">${post.title}</h2>
-                            <div class="article-meta">
-                                <span>已有${post.visits}浏览</span>
-                                <#--                                <span>发布于</span>-->
-                                <#--                                <time datetime="${post.editTime}" itemprop="datePublished">-->
-                                <#--&lt;#&ndash;                                    2019-06-13&ndash;&gt;-->
-                                <#--                                </time>-->
+                            <div class="article-meta"><span>发布于</span>
+                                <time datetime=" ${post.createTime?string("yyyy-MM-dd")}" itemprop="datePublished">
+                                    ${post.createTime?string("yyyy-MM-dd")}
+                                </time>
                             </div>
                             <div class="article-category">
                                 <#list post.tags as tag>
