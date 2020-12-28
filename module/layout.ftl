@@ -11,10 +11,14 @@
 
     <link href="${theme_base!}/source/css/highlight/androidstudio.css" type="text/css" rel="stylesheet" />
 
+    <link rel="alternate" type="application/rss+xml" title="atom 1.0" href="${atom_url!}">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
 
     <script>hljs.initHighlightingOnLoad();</script>
+
+
 
 
 </head>
