@@ -266,6 +266,13 @@ dfn {
     display: none;
   }
 }
+.post-content pre code {
+  line-height: 20px;
+  margin: 0;
+  padding: 1.3em;
+  color: #313131;
+  background-color: #f7f7f7;
+}
 html.show-mobile-nav {
   overflow: hidden;
   -webkit-tap-highlight-color: rgba(0,0,0,0);

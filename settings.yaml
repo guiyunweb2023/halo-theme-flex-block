@@ -7,7 +7,7 @@ genernal:
       name: home_cover
       label: 首页背景
       type: attachment
-      default: https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/default-bg.jpg
+      default: https://image.guiyunweb.com/2021/84306692_p0_master1200_1608708448480_1625562784578.jpg?imageMogr2/format/webp/interlace/1/quality/090
     archives_cover:
       name: archives_cover
       label: 归档背景
