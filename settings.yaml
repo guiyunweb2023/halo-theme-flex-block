@@ -20,7 +20,7 @@ genernal:
       default: https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/default-bg.jpg
     footer:
       name: footer
-      label: 尾部文件
+      label: 尾部文字
       type: text
       placeholder: '尾部'
 link:
