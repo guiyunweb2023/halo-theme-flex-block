@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="${keywords!}"/>
     <meta name="description" content="${description!}" />
+
+    <#if settings.pinghsu_general_dns!false>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//cdnjs.loli.net" />
+    <link rel="dns-prefetch" href="//gravatar.loli.net" />
+    </#if>
+
     <title>${title!}</title>
     <link href="${theme_base!}/source/css/style.css" type="text/css" rel="stylesheet" />
     <@global.head />
 
-    <link href="${theme_base!}/source/css/highlight/androidstudio.css" type="text/css" rel="stylesheet" />
-
     <link rel="alternate" type="application/rss+xml" title="atom 1.0" href="${atom_url!}">
 
-
-    <script src="${theme_base!}/source/js/highlight.min.js"></script>
-
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/xcode.min.css">
 
 </head>
 <body>
@@ -29,8 +28,10 @@
     <#include "footer.ftl">
 </div>
 </body>
-<script type="text/javascript">
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
 
+<script type="text/javascript">
+    hljs.initHighlightingOnLoad();
 </script>
 </html>
 </#macro>
