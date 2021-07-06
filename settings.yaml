@@ -20,7 +20,7 @@ genernal:
       default: https://cdn.jsdelivr.net/gh/xzzai/static@master/uPic/default-bg.jpg
     footer:
       name: footer
-      label: footer
+      label: 尾部文件
       type: text
       placeholder: '尾部'
 link:
@@ -40,17 +40,6 @@ link:
       type: text
     link_icon:
       name: link_icon
-      label: 站点名称
+      label: 站点logo
       type: text
-    link_comment:
-      name: link_comment
-      label: 友链评论(危险)
-      type: radio
-      data-type: bool
-      default: false
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
 

@@ -18,7 +18,7 @@
 
     <link rel="alternate" type="application/rss+xml" title="atom 1.0" href="${atom_url!}">
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/xcode.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/rainbow.min.css">
 
 </head>
 <body>
