@@ -1,24 +1,36 @@
+<#--  首页  -->
 <#include "module/layout.ftl">
 <#include "module/header.ftl">
-<@layout title="${options.blog_title!} | 归档" keywords="${options.seo_keywords!}" description="${options.seo_description!}">
-    <@header title="归档" subtitle="${settings.index_notice!}" home_cover="${settings.archives_cover}" />
-    <div class="body-container">
-        <article class="content-container article-container">
-            <div class="article-content">
-                <section class="article-entry">
-                    <#list archives as archive>
-                        <li style="list-style: none;">
-                            <h2>${archive.year?c}</h2>
-                            <ul>
-                                <#list archive.posts?sort_by("createTime")?reverse as post>
-                                    <li style="line-height:40px;">
-                                        <a href="${post.fullPath!}">${post.title!}</a></li>
-                                </#list>
-                            </ul>
-                        </li>
-                    </#list>
-                </section>
-            </div>
-        </article>
+<@layout title="${blog_title!}">
+<@header home_cover="${settings.archives_cover}" >
+<#include "module/nav.ftl">
+<div class="header-content">
+      <div class="post-text layout-block layout-padding">
+        <h1 class="title-wrap">归档</h1>
+        <@postTag method="count">
+         <h2 class="title-sub-wrap">共有${count!0}篇文章</h2>
+        </@postTag>
+      </div>
     </div>
+</@header>
+
+<div class="body-container">
+        <div class="layout-block post-container">
+            <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+            <@postTag method="archiveMonth">
+                <#list archives as archive>
+                    <h3>${archive.year?c}-${archive.month?c}</h3>
+                    <ul>
+                        <#list archive.posts?sort_by("createTime")?reverse as post>
+                            <li>
+                            <a href="${post.fullPath!}">${post.title!}</a>
+                            </li>
+                        </#list>
+                    </ul>
+                </#list>
+                </@postTag>
+            </section>
+        </div>
+</div>
+
 </@layout>

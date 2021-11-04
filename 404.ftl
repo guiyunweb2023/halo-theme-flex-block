@@ -128,8 +128,8 @@
         </header>
         <section>
             <div class="title404">
-                <p>I have no secret of success but hard work.</p>
-            </div><a href="${blog_url!}" class="index404">Back Home</a>
+                <p>你访问的页面找不到了</p>
+            </div><a href="${blog_url!}" class="index404">返回首页</a>
         </section>
     </div>
 </div>
