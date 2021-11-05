@@ -26,8 +26,8 @@
        }
        </style>
     </#if>
-
     <link href="${theme_base!}/source/css/style.min.css" type="text/css" rel="stylesheet" />
+    <link rel="alternate" type="application/rss+xml" title="atom 1.0" href="${atom_url!}">
 </head>
 <body>
 <div class="root-container">
